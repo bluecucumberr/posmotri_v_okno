@@ -137,7 +137,7 @@ ol {
 }
 
 .preloader {
-  position: absolute;
+  position: relative;
 }
 
 .search-form__fieldset-title {
