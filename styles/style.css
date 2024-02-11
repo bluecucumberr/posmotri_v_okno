@@ -93,7 +93,6 @@ ol {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
 
 .content__video-card-thumbnail {
@@ -122,6 +121,14 @@ ol {
   min-block-size: 107px;
 }
 
+.content__list-item{
+  margin-bottom: 30px;
+}
+
+.content__list-item:last-child{
+  margin-bottom: 0;
+}
+
 .content__list-item:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -143,7 +150,7 @@ ol {
 .search-form__fieldset-title {
   color: #fff;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.22;
   font-size: 18px;
   margin-top: -3px;
   margin-bottom: 2px;
@@ -153,7 +160,7 @@ ol {
   font-family: "Oswald", sans-serif;
   font-size: 75px;
   font-weight: 700;
-  line-height: 70px;
+  line-height: 0.93;
   text-transform: uppercase;
 }
 
@@ -174,7 +181,7 @@ ol {
 }
 
 .content__video-card-description {
-  line-height: 16.2px;
+  line-height: 0.9;
   margin-top: 4px;
 }
 
@@ -206,7 +213,7 @@ fieldset {
   width: fit-content;
   font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.22;
   cursor: pointer;
 }
 
@@ -220,7 +227,7 @@ fieldset {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.22;
   cursor: pointer;
   color: #fff;
 }
@@ -262,6 +269,9 @@ fieldset {
   block-size: 19px;
   border: 1px solid #fff;
   margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
@@ -269,10 +279,6 @@ fieldset {
   inline-size: 15px;
   block-size: 15px;
   background-color: #fff;
-  display: block;
-  position: relative;
-  top: 1.5px;
-  left: 1.5px;
 }
 
 .search-form__label:hover {
@@ -283,7 +289,7 @@ fieldset {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 22px;
+  line-height: 1.22;
   color: #fff;
   background-color: transparent;
   border: 1px solid #fff;
